@@ -1,4 +1,3 @@
-// بسم الله الرحمن الرحيم
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,3 @@
-// بسم الله الرحمن الرحيم
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,33 +7,36 @@ typedef short int sint;
 #define endn "\n"
 #define umap unordered_map
 
-//Solve
-int main(void) {
+// Solve
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int len;
-    cin >>len;
+    cin >> len;
     vector<int> values;
 
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; i++)
+    {
         int temp;
-        cin >>temp;
+        cin >> temp;
         values.push_back(temp);
     }
 
-  
     int x, y;
-    cin >>x;
-    values.erase(values.begin()+x-1);
-    cin >>x >>y;
-    values.erase((values.begin()+x-1), values.begin()+y-1);
+    cin >> x;
+    values.erase(values.begin() + x - 1);
+    cin >> x >> y;
+    values.erase((values.begin() + x - 1), values.begin() + y - 1);
 
-    cout <<values.size() <<endn;
-    for (const int &v : values) {
-        cout <<v <<" ";
+    cout << values.size() << endn;
+    for (const int &v : values)
+    {
+        cout << v << " ";
     }
-    cout <<endn;
+    cout << endn;
 
     return 0;
 }

@@ -1,4 +1,3 @@
-// بسم الله الرحمن الرحيم
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,29 +6,36 @@ typedef unsigned long long int ullint;
 typedef short int sint;
 #define endn "\n"
 
-//Solve
-void test(void) {
+// Solve
+void test(void)
+{
     sint n;
-    cin >>n;
+    cin >> n;
     int groth = 1;
-    for (int i = 1; i <= n; i++) {
-        if (i % 2) {
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 2)
+        {
             groth *= 2;
         }
-        else {
+        else
+        {
             groth++;
         }
     }
-    cout <<groth <<endn;
+    cout << groth << endn;
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     sint t;
-    cin >>t;
-    while (t--) {
+    cin >> t;
+    while (t--)
+    {
         test();
     }
 
