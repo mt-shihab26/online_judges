@@ -1,3 +1,5 @@
 .cph
 a.out
 .vscode
+.idea
+*.class
