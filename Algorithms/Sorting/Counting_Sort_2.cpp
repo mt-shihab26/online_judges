@@ -4,19 +4,23 @@ using namespace std;
 
 int frequency_arr[105];
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     int n;
     cin >> n;
     int tmp;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> tmp;
         frequency_arr[tmp]++;
     }
-    for (int i = 0; i < 104; i++) {
-        while (frequency_arr[i]--) {
+    for (int i = 0; i < 104; i++)
+    {
+        while (frequency_arr[i]--)
+        {
             cout << i << " ";
         }
     }
