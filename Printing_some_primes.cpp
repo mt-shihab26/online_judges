@@ -1,42 +1,45 @@
-// بسم الله الرحمن الرحيم
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int llint;
-typedef unsigned long long int ullint;
-typedef short int sint;
 #define endn "\n"
-#define umap unordered_map
-#define uset unordered_set
 
 #define mx 100000000
 bitset<mx> mark;
 vector<int> primes;
-void sieve(void) {
+void sieve(void)
+{
     int i, j;
     primes.push_back(2);
     int root = sqrt(int(mx));
-    for (i = 3; i <= root; i += 2) {
-        if (mark[i] == false) {
+    for (i = 3; i <= root; i += 2)
+    {
+        if (mark[i] == false)
+        {
             primes.push_back(i);
-            for (j = i*i; j <= mx; j += 2*i) {
+            for (j = i * i; j <= mx; j += 2 * i)
+            {
                 mark[j] = true;
             }
         }
     }
-    for (; i <= mx; i += 2) {
-        if (mark[i] == false) {
+    for (; i <= mx; i += 2)
+    {
+        if (mark[i] == false)
+        {
             primes.push_back(i);
         }
     }
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     sieve();
-    for (int i = 0; i < primes.size(); i += 100) {
+    for (int i = 0; i < primes.size(); i += 100)
+    {
         cout << primes[i] << endn;
     }
 }
