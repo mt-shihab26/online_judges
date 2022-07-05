@@ -1,38 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int llint;
-typedef unsigned long long int ullint;
-typedef short int sint;
-#define endn "\n"
-#define umap unordered_map
-#define uset unordered_set
-#define pb push_back
-template<typename tem>
-void print_vector(vector<tem> &vec) {
-for (auto &ele : vec) cout<<ele<<" ";
-cout << "\n";}
+#define ed '\n'
+#define gp ' '
+#define lli long long int
+#define vec vector
+#define str string
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
-
-    int n;
+bool solve()
+{
+    int n, q, m, ans, i;
     cin >> n;
-    int a[n];
-    for (int i = 0; i < n; i++) {
+    vec<int> a(n);
+    for (i = 0; i < n; i++)
         cin >> a[i];
-    }
-    int q;
+
+    sort(a.begin(), a.end());
+
     cin >> q;
-    sort(a, a+n);
-    int w;
-    while (q--) {
-        cin >> w;
-        auto it = upper_bound(a, a+n, w);
-        int ans = (it - a);
-        cout << ans << endn;
+    while (q--)
+    {
+        cin >> m;
+        auto it = upper_bound(a.begin(), a.end(), m);
+        ans = it - a.begin();
+        cout << ans << ed;
     }
+
+    return true;
 }
-// Solved By: shihab4t
-// Friday, July 30, 2021 | 05:26:25 PM (+06)
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    solve();
+
+    return 0;
+}
+// github.com/shihab4t (Shihab Mahamud)
+// Tuesday, July 05, 2022 | 07:04:07 PM (+06)
