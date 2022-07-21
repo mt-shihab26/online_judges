@@ -1,91 +1,60 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-template <typename T>
-istream &operator>>(istream &istream, vector<T> &v)
-{
-    int len = v.size();
-    for (int i = 0; i < len; i++)
-        cin >> v[i];
-    return istream;
-}
-template <typename T>
-ostream &operator<<(ostream &ostream, const set<T> &s)
-{
-    for (auto ith : s)
-        cout << ith << " ";
-    return ostream;
-}
-template <typename T>
-ostream &operator<<(ostream &ostream, const vector<T> &v)
-{
-    for (auto ith : v)
-        cout << ith << " ";
-    return ostream;
-}
-template <typename T, typename T2>
-ostream &operator<<(ostream &ostream, const pair<T, T2> &p)
-{
-    return (ostream << p.first << " " << p.second);
-}
-template <typename T, typename T2>
-ostream &operator<<(ostream &ostream, const map<T, T2> &mp)
-{
-    for (auto ith : mp)
-        cout << ith << "\n";
-    return ostream;
-}
-
-#define str string
+#define ed '\n'
+#define gp ' '
+#define lli long long int
 #define vec vector
-#define endn '\n'
-#define test_cases \
-    int t;         \
-    cin >> t;      \
-    while (t--)    \
-        solve();
+#define str string
+#define all(x) x.begin(), x.end()
 
-/* -------------------- solution start -------------------- */
+bool solve()
+{
+    lli n, l, r, x, i, j;
+    cin >> n >> l >> r >> x;
+    vec<lli> a(n);
+    for (i = 0; i < n; i++)
+        cin >> a[i];
 
-int32_t main()
+    lli last = 1 << n, sum, mx, mn, ct = 0; // 1 * 2 ^ n;
+
+    // 2 -> 00000010
+    // 1 -> 00000001; 1 << 0
+    // 8 -> 1000
+    // 7 -> 0111
+
+    for (i = 1; i < last; i++)
+    {
+        sum = 0, mx = LLONG_MIN, mn = LLONG_MAX;
+        for (j = 0; j <= n; j++)
+        {
+            if (i & (1ll << j))
+            {
+                sum += a[j];
+                mx = max(mx, a[j]);
+                mn = min(mn, a[j]);
+            }
+        }
+        cerr << i << " -> " << (bitset<15>(i)) << gp;
+        cerr << sum << gp << mx << gp << mn << gp << ct << ed;
+        if ((l <= sum && sum <= r) && (mx - mn >= x))
+            ct++;
+    }
+
+    cout << ct << ed;
+
+    return true;
+}
+
+int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int n, l, r, x;
-    cin >> n >> l >> r >> x;
-    vec<int> c(n);
-    cin >> c;
-    sort(c.begin(), c.end());
-
-    int last = (1 << n) - 1;
-    int ct = 0;
-
-    for (int mask = 0; mask <= last; mask++)
-    {
-        int bit_count = __builtin_popcount(mask);
-        int total = 0, smallest = INT_MAX, biggest = INT_MIN;
-        if (bit_count >= 2)
-        {
-            smallest = INT_MAX, biggest = INT_MIN;
-            for (int i = 0; i < n; i++)
-            {
-                if (mask & (1 << i))
-                {
-                    total += c[i];
-                    smallest = min(smallest, c[i]);
-                    biggest = max(biggest, c[i]);
-                }
-            }
-            if (l <= total && total <= r && biggest - smallest >= x)
-            {
-                ct++;
-            }
-        }
-    }
-    cout << ct << endn;
+    solve();
 
     return 0;
 }
-// Shihab Mahamud (github.com/shihab4t)
+// github.com/shihab4t (Shihab Mahamud)
 // Sunday, May 08, 2022 | 03:31:17 AM (+06)
+// Friday, July 22, 2022 | 03:36:50 AM (+06)
