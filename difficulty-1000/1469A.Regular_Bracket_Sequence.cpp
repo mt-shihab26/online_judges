@@ -8,26 +8,32 @@ typedef short int sint;
 #define umap unordered_map
 #define uset unordered_set
 
-void test_case(void) {
+void test_case(void)
+{
     string str;
     cin >> str;
-    
+
     bool flag = true;
-    if (str.length() % 2 || str.front() == ')' || str.back() == '(') {
+    if (str.length() % 2 || str.front() == ')' || str.back() == '(')
+    {
         cout << "NO" << endn;
     }
-    else {
+    else
+    {
         cout << "YES" << endn;
     }
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         test_case();
     }
 }

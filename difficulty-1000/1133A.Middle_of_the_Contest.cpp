@@ -3,10 +3,11 @@ using namespace std;
 typedef long long int lli;
 #define endn "\n"
 
-void test(void) {
+void test(void)
+{
     int h1, m1, h2, m2;
     char cht;
-    cin >> h1 >> cht >>m1 >>h2 >>cht >>m2;
+    cin >> h1 >> cht >> m1 >> h2 >> cht >> m2;
     // cout <<h1 <<" " <<m1 <<" ";
     // cout <<h2 <<" " <<m2;
 
@@ -20,26 +21,26 @@ void test(void) {
     int mid_h = mid_point / 60;
     int mid_m = mid_point - (mid_h * 60);
 
-    if (mid_h < 10) {
-        cout <<0;
+    if (mid_h < 10)
+    {
+        cout << 0;
     }
-    cout <<mid_h <<":";
-    if (mid_m < 10) {
-        cout <<0;
+    cout << mid_h << ":";
+    if (mid_m < 10)
+    {
+        cout << 0;
     }
-    cout <<mid_m <<endn;
-
-
-
+    cout << mid_m << endn;
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
-    
-    
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     test();
-    
+
     return 0;
 }
 // Solved By: shihab4t

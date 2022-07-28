@@ -4,7 +4,8 @@ using namespace std;
 typedef long long int lli;
 #define endn "\n"
 
-void inilized(string akk[]) {
+void inilized(string akk[])
+{
     akk[0] = "zero", akk[1] = "one";
     akk[2] = "two", akk[3] = "three";
     akk[4] = "four", akk[5] = "five";
@@ -15,39 +16,42 @@ void inilized(string akk[]) {
     akk[14] = "fourteen", akk[15] = "fifteen";
     akk[16] = "sixteen", akk[17] = "seventeen";
     akk[18] = "eighteen", akk[19] = "nineteen";
-    akk[20] = "twenty"; akk[30] = "thirty";
+    akk[20] = "twenty";
+    akk[30] = "thirty";
     akk[40] = "forty", akk[50] = "fifty";
     akk[60] = "sixty", akk[70] = "seventy";
     akk[80] = "eighty", akk[90] = "ninety";
 }
 
-
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int num;
-    cin >>num;
+    cin >> num;
 
     string akk[100];
     inilized(akk);
     string ans;
 
-    if (num <= 20) {
+    if (num <= 20)
+    {
         ans = akk[num];
     }
-    else if (num % 10 == 0) {
+    else if (num % 10 == 0)
+    {
         ans = akk[num];
     }
-    else {
+    else
+    {
         int last = num % 10;
-        ans = akk[num-last];
+        ans = akk[num - last];
         ans += "-" + akk[last];
     }
 
-    cout <<ans <<endn;    
-
-    
+    cout << ans << endn;
 
     return 0;
 }

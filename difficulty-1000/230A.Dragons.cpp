@@ -1,41 +1,56 @@
 #include <bits/stdc++.h>
 using namespace std;
-//typedef
+// typedef
 typedef long long int lli;
 typedef long double ld;
-//define
+// define
 #define endn "\n"
 #define faststdio ios_base::sync_with_stdio(false);
-#define fastcincout cin.tie(NULL); cout.tie(NULL);
+#define fastcincout \
+    cin.tie(NULL);  \
+    cout.tie(NULL);
 #define fastio faststdio fastcincout
-#define tc(sl) int T; cin >>T; while (T--) {sl;}
+#define tc(sl)  \
+    int T;      \
+    cin >> T;   \
+    while (T--) \
+    {           \
+        sl;     \
+    }
 #define vec vector
-//functions
+// functions
 template <typename T>
-inline void print_vector(vector<T> &vac) {
-for (int ele:vac) cout <<ele <<" "; cout <<"\n";}
-
+inline void print_vector(vector<T> &vac)
+{
+    for (int ele : vac)
+        cout << ele << " ";
+    cout << "\n";
+}
 
 // Solve
-void test(void) {
+void test(void)
+{
     int s, n;
-    cin >>s >>n;
+    cin >> s >> n;
 
     array<int, 2> arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i][0] >> arr[i][1];
-    
-    sort(arr, arr+n);
-    for (int i = 0; i < n; i++) {
-        if (s <= arr[i][0]) { // !s > x
-            cout << "NO" <<endn;
+
+    sort(arr, arr + n);
+    for (int i = 0; i < n; i++)
+    {
+        if (s <= arr[i][0])
+        { // !s > x
+            cout << "NO" << endn;
             return;
         }
-        else {
+        else
+        {
             s += arr[i][1];
         }
     }
-    cout << "YES" <<endn;
+    cout << "YES" << endn;
 }
 
 int main(void)

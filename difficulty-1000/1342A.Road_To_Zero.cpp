@@ -10,29 +10,35 @@ typedef unsigned int uint;
 #define uset unordered_set
 #define pb push_back
 
-void test() {
+void test()
+{
     llint x, y, a, b;
     cin >> x >> y >> a >> b;
 
     llint sum = 0;
-    if (a+a > b) {
-        if (x > y) swap(x, y);
+    if (a + a > b)
+    {
+        if (x > y)
+            swap(x, y);
         sum = (x * b) + ((y - x) * a);
     }
-    else {
-        sum = (x+y) * a;
+    else
+    {
+        sum = (x + y) * a;
     }
-    
+
     cout << sum << endn;
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         test();
     }
 }

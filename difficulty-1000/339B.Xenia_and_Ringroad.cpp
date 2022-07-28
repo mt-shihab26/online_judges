@@ -1,40 +1,54 @@
 #include <bits/stdc++.h>
 using namespace std;
-//typedef
+// typedef
 typedef long long int lli;
 typedef long double ld;
-//define
+// define
 #define endn "\n"
 #define faststdio ios_base::sync_with_stdio(false);
-#define fastcincout cin.tie(NULL); cout.tie(NULL);
+#define fastcincout \
+    cin.tie(NULL);  \
+    cout.tie(NULL);
 #define fastio faststdio fastcincout
-#define tc(sl) int T; cin >>T; while (T--) {sl;}
+#define tc(sl)  \
+    int T;      \
+    cin >> T;   \
+    while (T--) \
+    {           \
+        sl;     \
+    }
 #define vec vector
-//functions
+// functions
 template <typename T>
-inline void print_vector(vector<T> &vac) {
-for (int ele:vac) cout <<ele <<" "; cout <<"\n";}
-
+inline void print_vector(vector<T> &vac)
+{
+    for (int ele : vac)
+        cout << ele << " ";
+    cout << "\n";
+}
 
 // Solve
-void test(void) {
+void test(void)
+{
     int n, m, tmp;
-    cin >>n >>m;
+    cin >> n >> m;
     vec<int> ta;
-    for (int i = 0; i < m; i++) {
-        cin >>tmp;
+    for (int i = 0; i < m; i++)
+    {
+        cin >> tmp;
         ta.push_back(tmp);
     }
 
     lli result = ta[0] - 1;
-    for (int i = 1; i < m; i++) {
-        if (ta[i-1] > ta[i])
-            result += ta[i] + (n - ta[i-1]);
-        else if (ta[i-1] <= ta[i])
-            result += ta[i] - ta[i-1];
+    for (int i = 1; i < m; i++)
+    {
+        if (ta[i - 1] > ta[i])
+            result += ta[i] + (n - ta[i - 1]);
+        else if (ta[i - 1] <= ta[i])
+            result += ta[i] - ta[i - 1];
     }
 
-    cout <<result <<endn;
+    cout << result << endn;
 }
 
 int main(void)

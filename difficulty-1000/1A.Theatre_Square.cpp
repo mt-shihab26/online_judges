@@ -2,21 +2,21 @@
 using namespace std;
 
 typedef long long int llint;
-typedef unsigned long long int ullint;
-typedef short int sint;
 #define endn "\n"
 
-//Solve
-int main(void) {
+// Solve
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     double n, m, a;
-    cin >>n >>m >>a;
+    cin >> n >> m >> a;
 
-    llint count = ceil(n/a) * ceil(m/a);
+    llint count = ceil(n / a) * ceil(m / a);
 
-    cout <<count <<endn;
+    cout << count << endn;
 
     return 0;
 }

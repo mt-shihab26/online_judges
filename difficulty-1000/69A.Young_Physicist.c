@@ -3,16 +3,14 @@
 #include <math.h>
 #include <ctype.h>
 
-int main() {
-
-    // freopen("input.txt", "rt", stdin);
-    // freopen("output.txt", "wt", stdout);
-    
+int main()
+{
     int t, x, y, z;
     int x_add = 0, y_add = 0, z_add = 0;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf("%d %d %d", &x, &y, &z);
         x_add += x;
         y_add += y;
@@ -21,7 +19,7 @@ int main() {
 
     if ((x_add == 0) && (y_add == 0) && (z_add == 0))
         printf("YES\n");
-    else 
+    else
         printf("NO\n");
 
     return 0;

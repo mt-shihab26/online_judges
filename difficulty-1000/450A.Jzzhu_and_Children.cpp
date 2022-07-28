@@ -4,20 +4,25 @@ typedef long long int lli;
 typedef long double ld;
 #define endn "\n"
 #define fasts ios_base::sync_with_stdio(false)
-#define fastcc cin.tie(NULL); cout.tie(NULL);
+#define fastcc     \
+    cin.tie(NULL); \
+    cout.tie(NULL);
 
 // Solve
-void test(void) {
+void test(void)
+{
     int n, m;
     cin >> n >> m;
     int result_indx, max = 0;
     double temp;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> temp;
-        if (ceil(temp/m) >= max) {
-            max = ceil(temp/m);
-            result_indx = i+1;
+        if (ceil(temp / m) >= max)
+        {
+            max = ceil(temp / m);
+            result_indx = i + 1;
         }
     }
 
@@ -30,7 +35,7 @@ int main(void)
     fastcc;
 
     test();
-    
+
     return 0;
 }
 // by: shihab4t

@@ -4,7 +4,8 @@ typedef long long int lli;
 typedef long double ld;
 #define endn "\n"
 
-int main(void) {
+int main(void)
+{
     char ch;
     string str;
 
@@ -13,19 +14,23 @@ int main(void) {
     cin >> ch;
     str.push_back(ch);
 
-    while(cin >> ch) {
+    while (cin >> ch)
+    {
         str.push_back(ch);
-        if (ch >= 'a' && ch <= 'z') {
+        if (ch >= 'a' && ch <= 'z')
+        {
             flag_1 = false;
         }
     }
 
-    if (flag_1) {
+    if (flag_1)
+    {
         if (str[0] >= 'a' && ch <= 'z')
             str[0] -= 32;
-        else 
+        else
             str[0] += 32;
-        for (int i = 1; i < str.size(); i++) {
+        for (int i = 1; i < str.size(); i++)
+        {
             str[i] += 32;
         }
     }
