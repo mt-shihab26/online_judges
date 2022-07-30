@@ -9,30 +9,36 @@ using namespace std;
 #define all(x) x.begin(), x.end()
 
 const int mod = 1e9 + 7;
+const int inf = 1e9;
 
 bool solve(int ti = 0)
 {
-    int n, ct = 0;
+    int n;
     cin >> n;
-    str s;
+    string s;
     cin >> s;
-    cerr << s << ed;
-    stack<char> st;
+
+    int ct = 0, mv = 0;
 
     for (int i = 0; i < n; i++)
     {
         if (s[i] == '(')
-            st.push('(');
+            ct++;
         else
         {
-            if (st.empty())
-                s += ')', ct++, n++;
+            if (ct > 0)
+                ct--;
             else
-                st.pop();
+            {
+                s += ')';
+                mv++;
+                n++;
+            }
         }
     }
 
-    cout << ct << ed;
+    cout << mv << ed;
+
     return true;
 }
 
@@ -51,4 +57,4 @@ int32_t main()
     return 0;
 }
 // github.com/shihab4t (Shihab Mahamud)
-// Thursday, July 28, 2022 | 10:03:04 PM (+06)
+// Saturday, July 30, 2022 | 11:30:41 PM (+06)
