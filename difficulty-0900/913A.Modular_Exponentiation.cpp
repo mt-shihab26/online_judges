@@ -1,22 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int llint;
-typedef unsigned long long int ullint;
-typedef short int sint;
-#define endn "\n"
-#define umap unordered_map
+#define ed '\n'
 
-//Solve
-int main(void) {
+int32_t main()
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
 
     int n, m;
-    cin >>n >>m;
-    cout <<(m % int(pow(2, n))) <<endn;
+    cin >> n >> m;
+    cout << (n >= 27 ? m : m % (1 << n)) << ed; // 1 * 2 ** n
 
     return 0;
 }
-// Solved By: shihab4t
-// Saturday, July 10, 2021 | 10:24:37 AM (+06)
+// github.com/shihab4t (Shihab Mahamud)
+// Monday, August 01, 2022 | 04:26:59 PM (+06)
