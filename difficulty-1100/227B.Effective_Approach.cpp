@@ -1,39 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long int lli;
-typedef long double ld;
-#define endn "\n"
-#define faststdio ios_base::sync_with_stdio(false);
-#define fastcincout cin.tie(NULL); cout.tie(NULL);
-#define fastio faststdio fastcincout
 
-// Solve
-void test(void) {
+typedef long long int lli;
+#define endn "\n"
+
+int main(void)
+{
+    ios_base::sync_with_stdio(false);
+    cout.tie(NULL);
+
     int len, temp;
     cin >> len;
     const int max_num = 1e5 + 3;
-    int possition[max_num], i;
-    for (i = 0; i < len; i++) {
+    int position[max_num], i;
+    for (i = 0; i < len; i++)
+    {
         cin >> temp;
-        possition[temp] = i;
+        position[temp] = i;
     }
     int m;
     cin >> m;
     lli vasya = 0, petya = 0;
-    for (i = 0; i < m; i++) {
+    for (i = 0; i < m; i++)
+    {
         cin >> temp;
-        vasya += possition[temp] + 1;
-        petya += len - possition[temp];
+        vasya += position[temp] + 1;
+        petya += len - position[temp];
     }
-    cout <<vasya <<" " <<petya <<endn;
-}
+    cout << vasya << " " << petya << endn;
 
-int main(void)
-{
-    fastio;
-
-    test();
-    
     return 0;
 }
 // by: shihab4t

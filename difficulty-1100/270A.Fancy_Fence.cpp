@@ -1,33 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int llint;
-typedef unsigned long long int ullint;
 typedef short int sint;
-typedef unsigned int uint;
 #define endn "\n"
-#define umap unordered_map
-#define uset unordered_set
-#define pb push_back
 
-void test() {
+void test()
+{
     sint a;
     cin >> a;
-    if (360 % (180-a) == 0) {
+    if (360 % (180 - a) == 0)
+    {
         cout << "YES" << endn;
     }
-    else {
+    else
+    {
         cout << "NO" << endn;
     }
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    
+
     sint t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         test();
     }
 }

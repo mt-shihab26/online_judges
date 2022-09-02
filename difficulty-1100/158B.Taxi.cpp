@@ -1,26 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long int llint;
-typedef unsigned long long int ullint;
-typedef short int sint;
 #define endn "\n"
-#define umap unordered_map
-#define uset unordered_set
 
-bool cmp(int a, int b) {
+bool cmp(int a, int b)
+{
     return a > b;
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int n;
     cin >> n;
     vector<int> groups;
     int temp;
-    while (n--){
+    while (n--)
+    {
         cin >> temp;
         groups.push_back(temp);
     }
@@ -28,17 +27,22 @@ int main(void) {
 
     vector<int> v(5, 0);
 
-    for (i = 0; i < groups.size(); i++) {
-        if (groups[i] == 4) {
+    for (i = 0; i < groups.size(); i++)
+    {
+        if (groups[i] == 4)
+        {
             v[4]++;
         }
-        else if (groups[i] == 3) {
+        else if (groups[i] == 3)
+        {
             v[3]++;
         }
-        else if (groups[i] == 2) {
+        else if (groups[i] == 2)
+        {
             v[2]++;
         }
-        else {
+        else
+        {
             v[1]++;
         }
     }
@@ -52,7 +56,7 @@ int main(void) {
     v[2] = v[2] % 2;
 
     ct += v[2];
-    v[1] > (v[2]*2) ? v[1] = v[1] - (v[2]*2) : v[1] = 0;
+    v[1] > (v[2] * 2) ? v[1] = v[1] - (v[2] * 2) : v[1] = 0;
 
     ct += v[1] / 4;
     v[1] % 4 == 0 ? ct : ct += 1;

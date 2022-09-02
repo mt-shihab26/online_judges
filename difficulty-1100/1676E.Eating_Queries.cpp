@@ -9,41 +9,11 @@ istream &operator>>(istream &istream, vector<T> &v)
         cin >> v[i];
     return istream;
 }
-template <typename T>
-ostream &operator<<(ostream &ostream, const set<T> &s)
-{
-    for (auto ith : s)
-        cout << ith << " ";
-    return ostream;
-}
-template <typename T>
-ostream &operator<<(ostream &ostream, const vector<T> &v)
-{
-    for (auto ith : v)
-        cout << ith << " ";
-    return ostream;
-}
-template <typename T, typename T2>
-ostream &operator<<(ostream &ostream, const pair<T, T2> &p)
-{
-    return (ostream << p.first << " " << p.second);
-}
-template <typename T, typename T2>
-ostream &operator<<(ostream &ostream, const map<T, T2> &mp)
-{
-    for (auto ith : mp)
-        cout << ith << "\n";
-    return ostream;
-}
 
 #define str string
 #define vec vector
 #define endn '\n'
-#define test_cases \
-    int t;         \
-    cin >> t;      \
-    while (t--)    \
-        solve();
+#define test_cases
 
 void solve()
 {
@@ -81,7 +51,10 @@ int32_t main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    test_cases;
+    int t;
+    cin >> t;
+    while (t--)
+        solve();
 
     return 0;
 }
