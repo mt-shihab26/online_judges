@@ -1,11 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long int lli;
+
+#define lli long long int
 #define endn "\n"
-#define fastio                        \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);                    \
-    cout.tie(NULL);
 
 void test(void)
 {
@@ -26,7 +23,9 @@ void test(void)
 
 int main(void)
 {
-    fastio;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int t;
     cin >> t;
     while (t--)

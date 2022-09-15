@@ -2,26 +2,6 @@
 using namespace std;
 
 #define endn '\n'
-#define umap unordered_map
-#define uset unordered_set
-#define pb push_back
-
-typedef short int sint;
-typedef unsigned int uint;
-typedef long long int llint;
-typedef unsigned long long int ullint;
-
-inline void first_io()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-}
-
-#define GLOBAL_ARRAY_SIZE 10000005
-#define LOCAL_ARRAY_SIZE 100005
-#define PI acos(-1.0)
-#define EPS 1e-9
-#define MOD 1000000007
 
 void test_case()
 {
@@ -46,7 +26,8 @@ void test_case()
 
 int main(void)
 {
-    first_io();
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     int t;
     cin >> t;

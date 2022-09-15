@@ -2,10 +2,7 @@
 using namespace std;
 
 #define ed '\n'
-#define gp ' '
-#define i64 long long int
 #define str string
-#define vec vector
 
 void solve()
 {
