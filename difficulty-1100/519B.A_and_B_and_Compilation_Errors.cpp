@@ -48,5 +48,5 @@ int main(void)
 
     cout << x << endn << y << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Sunday, August 08, 2021 | 03:01:06 AM (+06)

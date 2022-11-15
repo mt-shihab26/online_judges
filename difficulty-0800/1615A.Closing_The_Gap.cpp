@@ -68,5 +68,5 @@ int main(void) {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/shh26b)
 // Monday, December 27, 2021 | 08:16:36 PM (EST)

@@ -74,5 +74,5 @@ int main(void) {
     }
     cout << ct << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Wednesday, July 14, 2021 | 11:20:28 AM (+06)

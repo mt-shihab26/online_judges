@@ -5,7 +5,6 @@ using namespace std;
 #define vec vector
 #define endn '\n'
 
-
 bool is_alright(map<char, int> mp)
 {
     vec<int> v;
@@ -136,4 +135,4 @@ int main()
 
     return 0;
 }
-// Shihab Mahamud (github.com/shihab4t)
+// Shihab Mahamud (github.com/shh26b)

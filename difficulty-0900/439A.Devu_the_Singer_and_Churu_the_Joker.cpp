@@ -72,5 +72,5 @@ int main() {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/shh26b)
 // Wednesday, January 26, 2022 | 03:30:27 PM (+06)

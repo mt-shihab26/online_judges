@@ -11,8 +11,10 @@ void test(void)
     int num;
     cin >> num;
     bool is = false;
-    while (num > 0) {
-        if (num % 11 == 0 || num % 111 == 0) {
+    while (num > 0)
+    {
+        if (num % 11 == 0 || num % 111 == 0)
+        {
             is = true;
             break;
         }
@@ -20,8 +22,8 @@ void test(void)
     }
     if (is)
         cout << "YES" << endn;
-    else 
-        cout << "NO" << endn;   
+    else
+        cout << "NO" << endn;
 }
 
 int main(void)
@@ -34,4 +36,4 @@ int main(void)
         test();
     return 0;
 }
-// by: shihab4t
+// by: shh26b

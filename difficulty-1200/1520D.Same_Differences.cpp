@@ -6,33 +6,41 @@ using str = string;
 
 #define vec vector
 #define endn '\n'
-#define first_io                        \
-    ios_base::sync_with_stdio(false);   \
+#define first_io                      \
+    ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
-#define file_io                         \
-    freopen("input.txt", "r", stdin);   \
+#define file_io                       \
+    freopen("input.txt", "r", stdin); \
     freopen("output.txt", "w", stdout);
-#define test_cases                      \
-    int t; cin >> t;while(t--) solve();
+#define test_cases \
+    int t;         \
+    cin >> t;      \
+    while (t--)    \
+        solve();
 
 template <typename tp>
-void print(tp arr[], int n) {
+void print(tp arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 template <typename tp>
-void print(vector<tp> &vc) {
+void print(vector<tp> &vc)
+{
     for (auto &ith : vc)
         cout << ith << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 
-
-void solve() {
+void solve()
+{
     int n, a;
     lli ans = 0;
     cin >> n;
     map<int, int> m;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         cin >> a;
         a = a - i;
         ans += m[a]++;
@@ -40,12 +48,13 @@ void solve() {
     cout << ans << endn;
 }
 
-int main() {
+int main()
+{
     first_io;
 
     test_cases;
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/shh26b)
 // Sunday, February 06, 2022 | 08:17:24 AM (+06)

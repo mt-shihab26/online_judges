@@ -44,5 +44,5 @@ int main(void) {
 
     cout << min_sum << " " << mx_sum << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Saturday, July 24, 2021 | 12:37:59 AM (BST)

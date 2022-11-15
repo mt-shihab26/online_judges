@@ -43,5 +43,5 @@ int main(void) {
         cout << mn << " " << mx << endn;
     }
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Friday, July 16, 2021 | 11:32:32 AM (+06)

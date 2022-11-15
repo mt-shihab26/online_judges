@@ -36,5 +36,5 @@ int main(void) {
     }
     cout << ct << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Friday, July 16, 2021 | 09:53:24 PM (+06)

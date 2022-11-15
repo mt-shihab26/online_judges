@@ -22,4 +22,4 @@ int main(void) {
     }
     return 0;
 }
-/* Author: shihab4t */
+/* Author: shh26b */

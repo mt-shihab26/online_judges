@@ -8,37 +8,43 @@ typedef short int sint;
 #define umap unordered_map
 #define uset unordered_set
 
-void test() {
+void test()
+{
     double n;
     int k;
     cin >> n >> k;
     vector<int> value;
     int tmp;
-    for (int i = 0; i  < n*k; i++) {
+    for (int i = 0; i < n * k; i++)
+    {
         cin >> tmp;
         value.push_back(tmp);
     }
     int m_indx = ceil(n / 2);
     llint sum = 0;
     int left = n - m_indx;
-    int i = value.size()-1;
+    int i = value.size() - 1;
     i -= left;
-    for (int j = 0; j < k; j++) {
+    for (int j = 0; j < k; j++)
+    {
         sum += value[i];
         i -= (left + 1);
     }
     cout << sum << endn;
 }
 
-int main(void) {
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         test();
     }
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Thursday, July 22, 2021 | 06:11:46 PM (+06)

@@ -14,4 +14,4 @@ int main(void) {
     cout << "EASY" << endl;
     return 0;
 }
-/* Author: shihab4t */
+/* Author: shh26b */

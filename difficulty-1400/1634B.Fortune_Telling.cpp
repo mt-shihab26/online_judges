@@ -6,50 +6,61 @@ using str = string;
 
 #define vec vector
 #define endn '\n'
-#define first_io                        \
-    ios_base::sync_with_stdio(false);   \
+#define first_io                      \
+    ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
-#define file_io                         \
-    freopen("input.txt", "r", stdin);   \
+#define file_io                       \
+    freopen("input.txt", "r", stdin); \
     freopen("output.txt", "w", stdout);
-#define test_cases                      \
-    int t; cin >> t;while(t--) solve();
+#define test_cases \
+    int t;         \
+    cin >> t;      \
+    while (t--)    \
+        solve();
 
 template <typename tp>
-void print(tp arr[], int n) {
+void print(tp arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 template <typename tp>
-void print(vector<tp> &vc) {
+void print(vector<tp> &vc)
+{
     for (auto &ith : vc)
         cout << ith << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 
-
-void solve() {
+void solve()
+{
     lli n, x, y;
     cin >> n >> x >> y;
     vec<int> a(n);
     int val = x;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> a[i];
         val = val ^ a[i];
     }
 
-    if (val % 2 == y % 2) {
+    if (val % 2 == y % 2)
+    {
         cout << "Alice" << endn;
     }
-    else {
+    else
+    {
         cout << "Bob" << endn;
     }
 }
 
-int main() {
+int main()
+{
     first_io;
 
     test_cases;
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/shh26b)

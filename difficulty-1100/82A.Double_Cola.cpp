@@ -44,8 +44,7 @@ int32_t main()
         {2, "Leonard"},
         {3, "Penny"},
         {4, "Rajesh"},
-        {5, "Howard"}
-    };
+        {5, "Howard"}};
 
     while (tm <= n)
     {
@@ -64,5 +63,5 @@ int32_t main()
 
     return 0;
 }
-// github.com/shihab4t (Shihab Mahamud)
+// github.com/shh26b (Shihab Mahamud)
 // Saturday, September 03, 2022 | 04:05:25 AM (+06)

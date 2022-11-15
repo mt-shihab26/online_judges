@@ -6,40 +6,50 @@ using str = string;
 
 #define vec vector
 #define endn '\n'
-#define first_io                        \
-    ios_base::sync_with_stdio(false);   \
+#define first_io                      \
+    ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
-#define file_io                         \
-    freopen("input.txt", "r", stdin);   \
+#define file_io                       \
+    freopen("input.txt", "r", stdin); \
     freopen("output.txt", "w", stdout);
-#define test_cases                      \
-    int t; cin >> t;while(t--) solve();
+#define test_cases \
+    int t;         \
+    cin >> t;      \
+    while (t--)    \
+        solve();
 
 template <typename tp>
-void print(tp arr[], int n) {
+void print(tp arr[], int n)
+{
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 template <typename tp>
-void print(vector<tp> &vc) {
+void print(vector<tp> &vc)
+{
     for (auto &ith : vc)
         cout << ith << " ";
-    cout << '\n';}
+    cout << '\n';
+}
 
-
-void solve() {
+void solve()
+{
     int n;
     cin >> n;
     vec<int> a(n);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> a[i];
     }
 
     int i = 1;
-    while (i < n-1) {
-        if (a[i-1] < a[i] && a[i] > a[i+1]) {
+    while (i < n - 1)
+    {
+        if (a[i - 1] < a[i] && a[i] > a[i + 1])
+        {
             cout << "YES" << endn;
-            cout << i << " " << i+1 << " " << i+2 << endn;
+            cout << i << " " << i + 1 << " " << i + 2 << endn;
             return;
         }
         i++;
@@ -47,12 +57,13 @@ void solve() {
     cout << "NO" << endn;
 }
 
-int main() {
+int main()
+{
     first_io;
 
     test_cases;
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/shh26b)
 // Tuesday, February 08, 2022 | 07:08:31 AM (+06)

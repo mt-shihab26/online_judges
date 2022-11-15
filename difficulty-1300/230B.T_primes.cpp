@@ -12,16 +12,22 @@ typedef short int sint;
 bitset<M> marks;
 uset<int> primes;
 
-void sieve(int n) {
-    for (int i = 2; i*i <= n; i++) {
-        if (marks[i] == false) {
-            for (int j = i + i; j <= n; j += i) {
+void sieve(int n)
+{
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (marks[i] == false)
+        {
+            for (int j = i + i; j <= n; j += i)
+            {
                 marks[j] = true;
             }
         }
     }
-    for (int i = 2; i <= n; i++) {
-        if (marks[i] == false) {
+    for (int i = 2; i <= n; i++)
+    {
+        if (marks[i] == false)
+        {
             primes.insert(i);
         }
     }
@@ -38,21 +44,23 @@ int main(void)
     int n;
     cin >> n;
     llint num;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> num;
         llint root = sqrt(num);
-        if (primes.find(root) != primes.end() && root * root == num) {
+        if (primes.find(root) != primes.end() && root * root == num)
+        {
             cout << "YES" << endn;
         }
-        else {
+        else
+        {
             cout << "NO" << endn;
         }
     }
-
 
     // for (int i = 0; i < primes.size(); i++) {
     //     cout << primes[i] << " ";
     // }
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Tuesday, July 13, 2021 | 08:48:03 AM (+06)

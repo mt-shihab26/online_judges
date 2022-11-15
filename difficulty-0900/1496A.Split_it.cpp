@@ -50,5 +50,5 @@ int main() {
 
     return 0;
 }
-// Shihab Mahamud (github.com/shihab4t)
+// Shihab Mahamud (github.com/shh26b)
 // Friday, February 25, 2022 | 03:10:48 PM (+06)

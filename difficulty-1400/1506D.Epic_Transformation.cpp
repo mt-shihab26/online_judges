@@ -67,7 +67,7 @@ bool solve()
     else
         ans = 2 * m - n;
     cout << ans << ed;
-    
+
     return true;
 }
 
@@ -91,4 +91,4 @@ int32_t main()
 
     return 0;
 }
-// Shihab Mahamud (github.com/shihab4t)
+// Shihab Mahamud (github.com/shh26b)

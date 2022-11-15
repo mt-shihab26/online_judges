@@ -6,30 +6,35 @@ typedef unsigned long long int ullint;
 typedef short int sint;
 #define endn "\n"
 
-//Solve
-int main(void) {
+// Solve
+int main(void)
+{
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     int state;
-    cin >>state;
+    cin >> state;
 
-    if (state < 0) {
+    if (state < 0)
+    {
         sint last = abs(state) % 10;
         sint second_last = (abs(state) % 100) / 10;
-        if (last >= second_last) {
+        if (last >= second_last)
+        {
             state = abs(state) / 10;
             state = -state;
         }
-        else {
+        else
+        {
             state = abs(state) / 100;
-            state = (state*10) + last;
+            state = (state * 10) + last;
             state = -state;
         }
     }
-    cout <<state <<endn;
+    cout << state << endn;
 
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Sunday, July 04, 2021 | 02:39:25 PM (+06)

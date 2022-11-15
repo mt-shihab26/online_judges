@@ -31,5 +31,5 @@ int main(void) {
 
     cout << ct << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Friday, July 16, 2021 | 10:58:23 AM (+06)

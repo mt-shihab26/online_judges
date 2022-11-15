@@ -38,5 +38,5 @@ int main(void) {
 
     return 0;
 }
-// Author: shihab4t
+// Author: shh26b
 // Date: Saturday, May 22, 2021 | 11:11:23 PM (+06)

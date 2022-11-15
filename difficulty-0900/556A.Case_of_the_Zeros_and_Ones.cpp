@@ -25,5 +25,5 @@ int main(void)
     cout << abs(ct_0 - ct_1) << endn;
     
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Friday, July 16, 2021 | 12:00:15 PM (+06)

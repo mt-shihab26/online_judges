@@ -25,5 +25,5 @@ int main(void) {
 
     cout << ct << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Thursday, July 15, 2021 | 11:48:33 AM (+06)

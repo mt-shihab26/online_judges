@@ -10,7 +10,7 @@ using namespace std;
 
 bool solve()
 {
-    
+
     return true;
 }
 
@@ -30,5 +30,5 @@ int32_t main()
 
     return 0;
 }
-// github.com/shihab4t (Shihab Mahamud)
+// github.com/shh26b (Shihab Mahamud)
 // Friday, July 22, 2022 | 05:43:49 PM (+06)

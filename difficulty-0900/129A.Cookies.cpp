@@ -24,5 +24,5 @@ int main(void) {
     }
     cout << (sum % 2 ? odd : even) << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Saturday, July 17, 2021 | 09:04:03 AM (+06)

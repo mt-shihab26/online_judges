@@ -73,5 +73,5 @@ int main(void) {
 
     cout << sum << endn;
 }
-// Solved By: shihab4t
+// Solved By: shh26b
 // Saturday, July 24, 2021 | 07:31:07 PM (+06)
