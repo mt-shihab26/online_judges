@@ -40,6 +40,15 @@ def rename_command() -> None:
     else:
         system(f"mv -v {old_file_name} {file_name}")
 
+def commit_command() -> None:
+    number_part = argv[2];
+    difficulty_part = argv[3];
+
+    system("git add .")
+    system(f"git commit -m 'Solved {number_part} problems of {difficulty_part} difficulty'")
+
+    if argv[4] == "push":
+        system("git push")
 
 def help_command() -> None:
     print("""sp
@@ -51,6 +60,7 @@ commands:
 <file name>  ----------------------------------------  Create file with ./template.cpp
 status  <numeric series> <alphabetical series> ------  Problem submission status
 rename <file name> <problem numeric series>  --------  Rename codeforces with specific formatting
+commit <number of problems> <difficulty> push/""  -----------  Git commit code with  general message
 help  ---------------------------------------  For help
     """)
 
@@ -66,6 +76,7 @@ if __name__ == "__main__":
     logic = {
         "status": status_command,
         "rename": rename_command,
+        "commit": commit_command,
         "help": help_command
     }
 
