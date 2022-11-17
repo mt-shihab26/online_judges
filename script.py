@@ -41,11 +41,13 @@ def rename_command() -> None:
         system(f"mv -v {old_file_name} {file_name}")
 
 def commit_command() -> None:
-    number_part = argv[2];
-    difficulty_part = argv[3];
+    number_part = argv[2]
+    difficulty_part = argv[3]
+
+    s = 's' if number_part > 1 else ''
 
     system("git add .")
-    system(f"git commit -m 'Solved {number_part} problems of {difficulty_part} difficulty'")
+    system(f"git commit -m 'Solved {number_part} problem{s} of {difficulty_part} difficulty'")
 
     if argv[4] == "push":
         system("git push")
