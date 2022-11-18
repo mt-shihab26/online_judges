@@ -6,27 +6,31 @@
 
 #define strtoint atoi
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
-    
+
     char num[4];
     int new_num, orginal_num;
     int t, i, temp;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         new_num = 0;
         scanf(" %s", num);
-        for (i = 0; i < 3; i++) {
+        for (i = 0; i < 3; i++)
+        {
             temp = num[i] - '0';
-            new_num += temp*temp*temp;
+            new_num += temp * temp * temp;
         }
         orginal_num = strtoint(num);
-        if (orginal_num == new_num) 
+        if (orginal_num == new_num)
             printf("%d is an armstrong number!\n", orginal_num);
-        else printf("%d is not an armstrong number!\n", orginal_num);
+        else
+            printf("%d is not an armstrong number!\n", orginal_num);
     }
 
     return 0;

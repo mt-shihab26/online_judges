@@ -2,16 +2,18 @@
 #include <string.h>
 #include <math.h>
 
-int main() {
+int main()
+{
 
-//    freopen("input.txt", "rt", stdin);
-//    freopen("output.txt", "wt", stdout);
-    
+    //    freopen("input.txt", "rt", stdin);
+    //    freopen("output.txt", "wt", stdout);
+
     int t;
     double a, b, c, s, result;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %lf %lf %lf", &a, &b, &c);
         s = (a + b + c) / 2;
         result = sqrt(s * (s - a) * (s - b) * (s - c));

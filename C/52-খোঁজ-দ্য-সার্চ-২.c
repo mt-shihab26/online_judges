@@ -13,7 +13,8 @@ int main()
     int t;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         char main_str[1000], sub_str[1000];
         scanf(" %s %s", main_str, sub_str);
 
@@ -23,8 +24,10 @@ int main()
         int count = 0;
         int j = 0;
 
-        while (j <= main_len - sub_len) {
-            if (strncmp(main_str+j, sub_str, sub_len) == 0) count++;
+        while (j <= main_len - sub_len)
+        {
+            if (strncmp(main_str + j, sub_str, sub_len) == 0)
+                count++;
             j++;
         }
         printf("%d\n", count);

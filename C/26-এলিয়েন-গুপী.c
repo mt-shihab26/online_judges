@@ -3,19 +3,22 @@
 #include <math.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
-    
+
     int t, count;
     double food;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         count = 0;
         scanf("%lf", &food);
-        while (food >= 1.0) {
+        while (food >= 1.0)
+        {
             food = food / 2;
             count++;
         }

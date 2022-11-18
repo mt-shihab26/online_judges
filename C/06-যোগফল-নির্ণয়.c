@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
 
@@ -9,11 +10,12 @@ int main() {
     char number[7];
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %s", number);
-	first = number[0] - '0';
-	last = number[4] - '0';
-	printf("Sum = %d\n", first+last);
+        first = number[0] - '0';
+        last = number[4] - '0';
+        printf("Sum = %d\n", first + last);
     }
 
     return 0;

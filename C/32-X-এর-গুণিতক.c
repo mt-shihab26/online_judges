@@ -2,28 +2,34 @@
 #include <string.h>
 #include <math.h>
 
-void multiplir_x(long long x, long long n) {
+void multiplir_x(long long x, long long n)
+{
     long long i;
-    if (x > n) {
+    if (x > n)
+    {
         printf("Invalid!\n");
     }
-    else {
-        for(i = x; i <= n; i += x) {
+    else
+    {
+        for (i = x; i <= n; i += x)
+        {
             printf("%lld\n", i);
         }
     }
 }
 
-int main() {
+int main()
+{
 
-//    freopen("input.txt", "rt", stdin);
-//    freopen("output.txt", "wt", stdout);
-    
+    //    freopen("input.txt", "rt", stdin);
+    //    freopen("output.txt", "wt", stdout);
+
     int t;
     long long x, n;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %lld %lld", &x, &n);
         multiplir_x(x, n);
         printf("\n");

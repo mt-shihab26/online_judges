@@ -4,13 +4,15 @@
 
 void factorial_100(int n);
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
     int t, num;
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf("%d", &num);
         factorial_100(num);
     }
@@ -21,7 +23,8 @@ int main() {
 void factorial_100(int n)
 {
     long pow_5 = 5, counter = 0;
-    while (pow_5 <= n) {
+    while (pow_5 <= n)
+    {
         counter += n / pow_5;
         pow_5 *= 5;
     }

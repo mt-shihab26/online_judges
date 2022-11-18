@@ -2,14 +2,15 @@
 #include <string.h>
 #include <math.h>
 
-int main() {
+int main()
+{
 
-//    freopen("input.txt", "rt", stdin);
-//    freopen("output.txt", "wt", stdout);
-    
+    //    freopen("input.txt", "rt", stdin);
+    //    freopen("output.txt", "wt", stdout);
+
     int t, c;
     double p, q;
-    long long  pow_n;
+    long long pow_n;
 
     scanf("%d", &t);
     while (t--)
@@ -18,7 +19,6 @@ int main() {
         pow_n = pow(p, q);
         printf("Result = %lld\n", (pow_n % c));
     }
-    
 
     return 0;
 }

@@ -6,36 +6,41 @@
 
 void sorting_ara(int *ara, int n);
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
-    
+
     int t, i;
 
     scanf("%d", &t);
     int ara[t], main_ara[t];
-    for (i = 0; i < t; i++) {
+    for (i = 0; i < t; i++)
+    {
         scanf(" %d", &ara[i]);
         main_ara[i] = ara[i];
     }
     sorting_ara(ara, t);
 
-    for (i = 0; i < t; i++) 
-        if (main_ara[i] != ara[i]) {
+    for (i = 0; i < t; i++)
+        if (main_ara[i] != ara[i])
+        {
             printf("NO\n");
             return 0;
         }
     printf("YES\n");
-    
+
     return 0;
 }
 
-void sorting_ara(int *ara, int n) {
+void sorting_ara(int *ara, int n)
+{
     int i, j, temp;
     for (i = 0; i < n; i++)
-        for (j = i+1; j < n; j++)
-            if (ara[i] > ara[j]) {
+        for (j = i + 1; j < n; j++)
+            if (ara[i] > ara[j])
+            {
                 temp = ara[i];
                 ara[i] = ara[j];
                 ara[j] = temp;

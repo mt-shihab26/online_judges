@@ -2,25 +2,30 @@
 #include <string.h>
 #include <math.h>
 
-void is_integer(int num) {
+void is_integer(int num)
+{
     int sqr_num = sqrt(num);
     int new_num = sqr_num * sqr_num;
 
-    if (new_num == num) {
+    if (new_num == num)
+    {
         printf("YES\n");
     }
-    else {
+    else
+    {
         printf("NO\n");
     }
 }
 
-int main() {
-//    freopen("input.txt", "rt", stdin);
-//    freopen("output.txt", "wt", stdout);
+int main()
+{
+    //    freopen("input.txt", "rt", stdin);
+    //    freopen("output.txt", "wt", stdout);
     int t, num;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %d", &num);
         is_integer(num);
     }

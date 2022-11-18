@@ -1,20 +1,23 @@
-// OJ: dimikoj.com-01 | Date: 17 January, 2021 | Author: Shihab Mahamud
-
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int t, number;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %d", &number);
-	if (number % 2 == 0) {
+        if (number % 2 == 0)
+        {
             printf("even\n");
-	}
-	else {
-	    printf("odd\n");
-	}
+        }
+        else
+        {
+            printf("odd\n");
+        }
     }
 
     return 0;
 }
+// OJ: dimikoj.com-01 | Date: 17 January, 2021 | Author: Shihab Mahamud

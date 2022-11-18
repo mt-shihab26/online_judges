@@ -4,19 +4,22 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
 
-    // freopen("input.txt", "rt", stdin);
-    // freopen("output.txt", "wt", stdout);
-    
+	// freopen("input.txt", "rt", stdin);
+	// freopen("output.txt", "wt", stdout);
+
 	int t, last_digit;
 	long num, reversed_num;
 
 	scanf("%d", &t);
-	while (t--) {
+	while (t--)
+	{
 		scanf(" %ld", &num);
 		reversed_num = 0;
-		while (num > 0) {
+		while (num > 0)
+		{
 			last_digit = num % 10;
 			num /= 10;
 			reversed_num = (reversed_num * 10) + last_digit;
@@ -24,7 +27,7 @@ int main() {
 		printf("%ld\n", reversed_num);
 	}
 
-    return 0;
+	return 0;
 }
 // Author: Shihab Mahamud
 // Date: Thursday, April 08, 2021 | 07:38:06 AM

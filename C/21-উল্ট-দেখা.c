@@ -3,19 +3,22 @@
 #include <math.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
-    
+
     int t, i;
     char str[1002];
 
     scanf("%d", &t);
 
-    while (t--) {
+    while (t--)
+    {
         scanf(" %[^\n]", str);
-        for (i = strlen(str)-1; i >= 0; i--) {
+        for (i = strlen(str) - 1; i >= 0; i--)
+        {
             printf("%c", str[i]);
         }
         printf("\n");

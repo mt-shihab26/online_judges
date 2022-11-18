@@ -2,35 +2,45 @@
 #include <string.h>
 #include <math.h>
 
-int main() {
+int main()
+{
 
-//    freopen("input.txt", "rt", stdin);
-//    freopen("output.txt", "wt", stdout);
-    
+    //    freopen("input.txt", "rt", stdin);
+    //    freopen("output.txt", "wt", stdout);
+
     int t, i, j, n, m;
 
     scanf("%d", &t);
-    while (t--) {
+    while (t--)
+    {
         scanf(" %d %d", &n, &m);
-        for(i = 1; i <= n; i++) {
+        for (i = 1; i <= n; i++)
+        {
             j = i;
-            while (j--) {
-                if(j == 0) {
+            while (j--)
+            {
+                if (j == 0)
+                {
                     printf("%d", m);
                 }
-                else {
+                else
+                {
                     printf("%d ", m);
                 }
             }
             printf("\n");
         }
-        for(i = n-1; i > 0; i--) {
+        for (i = n - 1; i > 0; i--)
+        {
             j = i;
-            while (j--) {
-                if(j == 0) {
+            while (j--)
+            {
+                if (j == 0)
+                {
                     printf("%d", m);
                 }
-                else {
+                else
+                {
                     printf("%d ", m);
                 }
             }
