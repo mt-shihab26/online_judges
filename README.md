@@ -2,7 +2,7 @@
 
 [দ্বিমিক অনলাইন জাজের](https://dimikoj.com) সমস্যা সমাধান।
 
-My Profile: https://dimikoj.com/users/6897/shihab4t
+My Profile: https://dimikoj.com/profile/2e0?shh26b
 
 <!-- Problem Solved Count: 55 -->
 
