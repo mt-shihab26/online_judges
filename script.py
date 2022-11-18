@@ -44,7 +44,7 @@ def commit_command() -> None:
     number_part = argv[2]
     difficulty_part = argv[3]
 
-    s = 's' if number_part > 1 else ''
+    s = 's' if int(number_part) > 1 else ''
 
     system("git add .")
     system(f"git commit -m 'Solved {number_part} problem{s} of {difficulty_part} difficulty'")
