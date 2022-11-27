@@ -13,19 +13,17 @@ def format_name(file: str) -> str:
     return file
 
 
-def add_extension(file: str) -> str:
+def add_extension(file: str):
+    ext = "cpp"
     if len(argv) >= 3:
         ext = argv[2]
-        file = file + "." + ext
-    else:
-        file = file + ".cpp"
-    return file
+    file = file + "." + ext
+    return file, ext
 
 
 def add_dir(file: str) -> str:
     if len(argv) >= 4:
-        dir = argv[3]
-        file = dir + "/" + file
+        file = argv[3] + "/" + file
     return file
 
 
@@ -35,8 +33,9 @@ def get_current_time() -> str:
     return time
 
 
-def copy_file(src: str, dst: str) -> None:
-    shutil.copy(src, dst)
+def copy_template_file(dst: str, ext: str) -> None:
+    template = "./template" + "." + ext
+    shutil.copy(template, dst)
 
 
 def append_time_file(file) -> None:
@@ -46,14 +45,14 @@ def append_time_file(file) -> None:
 
 
 if __name__ == "__main__":
-    template = "./template.cpp"
 
-    file = format_name(add_extension(add_dir(argv[1])))
+    file, ext = add_extension(add_dir(argv[1]))
+    file = format_name(file)
     time = get_current_time()
 
     print(f"Creating the {file} file with leetcode template... Done.")
 
-    copy_file(template, file)
+    copy_template_file(file, ext)
     append_time_file(file)
 
     print("Done! let's play")
