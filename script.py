@@ -14,6 +14,9 @@ def format_name(file: str) -> str:
     i = file.find("___")
     if (i >= 0):
         file = file[:i] + "_" + file[i+3:]
+    i = file.find(".")
+    if i >= 0:
+        file = file[:i] + "_" + file[i+1:]
     return file
 
 
