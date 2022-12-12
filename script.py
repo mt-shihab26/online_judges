@@ -10,6 +10,10 @@ def format_name(file: str) -> str:
     file = re.sub(" ", "_", file)
     i = file.find("._")
     file = file[: i+1] + file[i + 2:]
+    file = file.lower()
+    i = file.find("___")
+    if (i >= 0):
+        file = file[:i] + "_" + file[i+3:]
     return file
 
 
