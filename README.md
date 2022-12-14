@@ -8,4 +8,4 @@
 
 ## Links
 
--   Linked List: https://leetcode.com/tag/linked-list
+-   Linked List: https://leetcode.com/tag/linked-list `count: 08`
