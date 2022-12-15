@@ -1,12 +1,12 @@
 #include <stdio.h>
-// #include <string.h>
 #include <math.h>
-// #include <ctype.h>
 #include <stdlib.h>
 
-int convert_bin_to_dec(int n) {
+int convert_bin_to_dec(int n)
+{
     int dec = 0, i = 0, rem;
-    while (n != 0) {
+    while (n != 0)
+    {
         rem = n % 10;
         n /= 10;
         dec += rem * pow(2, i);
@@ -15,18 +15,14 @@ int convert_bin_to_dec(int n) {
     return dec;
 }
 
-
-int main(void) 
+int main(void)
 {
-
-    // freopen("input.txt", "rt", stdin);
-    // freopen("output.txt", "wt", stdout);
-    
     int t, i, k, j, m;
 
     scanf("%d", &t);
-    
-    for (i = 0; i < t; i++) {
+
+    for (i = 0; i < t; i++)
+    {
         int line_1[4], line_2[4], is = 1;
         char line_1s[18], line_2s[50];
 
@@ -35,15 +31,18 @@ int main(void)
         sscanf(line_1s, "%d.%d.%d.%d", &line_1[0], &line_1[1], &line_1[2], &line_1[3]);
         sscanf(line_2s, "%d.%d.%d.%d", &line_2[0], &line_2[1], &line_2[2], &line_2[3]);
 
-        printf("Case %d: ", i+1);
-        for (j = 0; j < 4; j++) {
-            if (line_1[j] != convert_bin_to_dec(line_2[j])) {
+        printf("Case %d: ", i + 1);
+        for (j = 0; j < 4; j++)
+        {
+            if (line_1[j] != convert_bin_to_dec(line_2[j]))
+            {
                 printf("No\n");
                 is = 0;
                 break;
             }
         }
-        if (is) {
+        if (is)
+        {
             printf("Yes\n");
         }
 

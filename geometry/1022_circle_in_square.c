@@ -5,7 +5,8 @@
 
 double get_shaded_region(double r);
 
-int main() {
+int main()
+{
 
     // freopen("input.txt", "rt", stdin);
     // freopen("output.txt", "wt", stdout);
@@ -25,9 +26,9 @@ int main() {
 
 double get_shaded_region(double r)
 {
-    double area_of_circle = M_PI * (r*r);
-    double a = r*2;
-    double area_of_squate = a*a;
+    double area_of_circle = M_PI * (r * r);
+    double a = r * 2;
+    double area_of_squate = a * a;
     return (area_of_squate - area_of_circle);
 }
 
