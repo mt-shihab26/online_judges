@@ -20,6 +20,7 @@ def root_command() -> None:
     if is_open_in_code:
         system(f"code {filename}")
 
+
 def status_command() -> None:
     numeric_series = argv[2]
     alphabetical_series = argv[3]
@@ -29,16 +30,29 @@ def status_command() -> None:
     system(command)
 
 
-def rename_command() -> None:
-    old_file_name = argv[2]
-    numeric_series = argv[3]
+def rename(old_file_name, numeric_series, mv_dir_name, is_mv_dir) -> None:
     file_name = re.sub("_", ".", old_file_name, 1)
     file_name = str(numeric_series) + file_name
 
-    if len(argv) == 5:
-        system(f"mv -v {old_file_name} difficulty-{argv[4]}/{file_name}")
+    if is_mv_dir == True:
+        system(f"mv -v {old_file_name} difficulty-{mv_dir_name}/{file_name}")
     else:
         system(f"mv -v {old_file_name} {file_name}")
+
+
+def rename_command() -> None:
+    if len(argv) == 5:
+        rename(argv[2], argv[3], argv[4], True)
+    else:
+        rename(argv[2], argv[3], "", False)
+
+
+def rename_command_again() -> None:
+    if len(argv) == 4:
+        rename(argv[1], argv[2], argv[3], True)
+    else:
+        rename(argv[2], argv[3], "", False)
+
 
 def commit_command() -> None:
     number_part = argv[2]
@@ -47,10 +61,12 @@ def commit_command() -> None:
     s = 's' if int(number_part) > 1 else ''
 
     system("git add .")
-    system(f"git commit -m 'Solved {number_part} problem{s} of {difficulty_part} difficulty'")
+    system(
+        f"git commit -m 'Solved {number_part} problem{s} of {difficulty_part} difficulty'")
 
     if argv[4] == "push":
         system("git push")
+
 
 def help_command() -> None:
     print("""sp
@@ -61,7 +77,8 @@ commands:
 -------------
 <file name>  ----------------------------------------  Create file with ./template.cpp
 status  <numeric series> <alphabetical series> ------  Problem submission status
-rename <file name> <problem numeric series>  --------  Rename codeforces with specific formatting
+<file name> <problem numeric series>  <dir name rate} --------  Rename codeforces with specific formatting
+rename <file name> <problem numeric series> <dir name rate}  --------  Rename codeforces with specific formatting
 commit <number of problems> <difficulty> push/""  -----------  Git commit code with  general message
 help  ---------------------------------------  For help
     """)
@@ -84,7 +101,11 @@ if __name__ == "__main__":
 
     if len(argv) <= 1:
         help_command()
+    elif is_arg_valid(logic, argv[1]) == True:
+        logic[argv[1]]()
+    elif len(argv) == 2:
+        root_command()
+    elif len(argv) <= 4:
+        rename_command_again()
     elif is_arg_valid(logic, argv[1]) == False:
         root_command()
-    else:
-        logic[argv[1]]()
