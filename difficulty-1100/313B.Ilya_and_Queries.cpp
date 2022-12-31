@@ -34,6 +34,6 @@ int main(void)
         cout << (a[r - 1] - a[l - 1]) << endn;
     }
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Sunday, August 08, 2021 | 03:43:00 AM (+06)
 // Accepted: 04:19:17 AM (+06)

@@ -32,5 +32,5 @@ int main(void) {
     }
     cout << min(odd, even) << endn;
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Sunday, July 25, 2021 | 07:25:25 AM (+06)

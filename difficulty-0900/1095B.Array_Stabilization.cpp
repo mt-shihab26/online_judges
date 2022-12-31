@@ -28,5 +28,5 @@ int main(void)
     int ans = min(a[len - 2] - a[0], a[len - 1] - a[1]);
     cout << ans << endn;
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Thursday, July 22, 2021 | 07:33:59 PM (+06)

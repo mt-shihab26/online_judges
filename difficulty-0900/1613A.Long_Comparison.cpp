@@ -76,6 +76,6 @@ int main(void) {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shh26b)
+// Solved by: Shihab Mahamud (github.com/shihab4t)
 // Friday, December 03, 2021 | 10:17:28 AM (+06)
 // Accepted: 11:00:19 AM (+06)

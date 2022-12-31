@@ -125,6 +125,6 @@ int main(void)
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shh26b)
+// Solved by: Shihab Mahamud (github.com/shihab4t)
 // Saturday, December 25, 2021 | 12:48:38 PM (+06)
 // Accepted: 04:59:01 PM (+06)

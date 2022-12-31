@@ -30,5 +30,5 @@ int main(void)
     }
     cout << "Poor Alex" << endn;
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Monday, August 09, 2021 | 12:06:14 AM (+06)

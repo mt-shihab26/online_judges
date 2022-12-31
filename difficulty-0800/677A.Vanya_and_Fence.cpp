@@ -17,4 +17,4 @@ int main(void) {
     cout << sum << endl;
     return 0;
 }
-/* Author: shh26b */
+/* Author: shihab4t */

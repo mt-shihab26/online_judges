@@ -33,5 +33,5 @@ int main(void) {
 
     cout << sum << endn;
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Saturday, July 31, 2021 |  1:15:15 PM (CAST)

@@ -81,5 +81,5 @@ int32_t main()
     cout << (flag ? "YES" : "NO") << ed;
     return 0;
 }
-// github.com/shh26b (Shihab Mahamud)
+// github.com/shihab4t (Shihab Mahamud)
 // Monday, August 22, 2022 | 06:09:55 AM (+06)

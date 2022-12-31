@@ -32,5 +32,5 @@ int main(void) {
         cout << (n-c1-c2) << endn;
     }
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Friday, July 16, 2021 | 02:40:36 AM (+06)

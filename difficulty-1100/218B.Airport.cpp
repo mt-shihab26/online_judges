@@ -58,5 +58,5 @@ int main(void)
 
     cout << mx_sum << " " << mn_sum << endn;
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Monday, July 26, 2021 | 01:37:00 PM (BST)

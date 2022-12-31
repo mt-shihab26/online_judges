@@ -34,5 +34,5 @@ int main(void) {
         cout << ans[i] << " ";
     }
 }
-// Solved By: shh26b
+// Solved By: shihab4t
 // Friday, July 16, 2021 | 08:31:07 PM (BST)
