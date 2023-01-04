@@ -22,15 +22,32 @@ int solve()
         return 1;
     }
 
-    int ct = 1;
-    int cl = 2;
+    int sq = sqrt(n);
 
-    while (n > k)
+    int ans = 1;
+
+    vec<int> divisors;
+
+    for (int i = 1; i <= sq; i++)
     {
-        ct *= 2;
-        n /= 2;
+        if (n % i == 0)
+        {
+            divisors.push_back(i);
+            divisors.push_back(n / i);
+        }
     }
-    cout << ct << ed;
+
+    sort(all(divisors));
+
+    // for (auto x : divisors)
+    // {
+    //     cerr << x << gp;
+    // }
+    // cerr << ed;
+
+    auto it = upper_bound(all(divisors), k);
+    it--;
+    cout << n / *it << ed;
 
     return 1;
 }
