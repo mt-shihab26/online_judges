@@ -13,7 +13,7 @@ const int inf = 1e9;
 
 int solve()
 {
-    
+
     return 1;
 }
 
@@ -21,6 +21,8 @@ int32_t main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
+    cerr << boolalpha;
+    cout << boolalpha;
 
     int t;
     cin >> t;
@@ -30,4 +32,4 @@ int32_t main()
     return 0;
 }
 // github.com/shihab4t (Shihab Mahamud)
-// 
+//
