@@ -62,5 +62,5 @@ int main(void)
     //     cout << primes[i] << " ";
     // }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Tuesday, July 13, 2021 | 08:48:03 AM (+06)

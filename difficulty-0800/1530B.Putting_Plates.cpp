@@ -67,5 +67,5 @@ int main(void) {
         test();
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Saturday, July 17, 2021 | 08:54:52 PM (+06)

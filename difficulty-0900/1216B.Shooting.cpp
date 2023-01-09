@@ -41,5 +41,5 @@ int main(void) {
         cout << v.second << " ";
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Saturday, July 24, 2021 | 01:25:27 AM (BST)

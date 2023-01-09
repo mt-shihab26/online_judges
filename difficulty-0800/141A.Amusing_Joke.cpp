@@ -33,5 +33,5 @@ int main(void)
     solve();
     return 0;
 }
-// by: shihab4t
+// by: p-nerd
 // Sunday, June 13, 2021 | 09:58:19 AM (+06)

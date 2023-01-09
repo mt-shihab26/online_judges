@@ -38,5 +38,5 @@ int main(void) {
         cout << test_case() << endn;
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Tuesday, July 20, 2021 | 01:36:44 AM (+06)

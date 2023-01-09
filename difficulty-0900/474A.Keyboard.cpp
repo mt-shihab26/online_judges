@@ -26,5 +26,5 @@ int main(void) {
     }
     cout << ans << endn;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Friday, July 16, 2021 | 06:54:09 PM (BST)

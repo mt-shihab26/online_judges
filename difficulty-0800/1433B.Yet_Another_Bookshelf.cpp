@@ -43,5 +43,5 @@ int main(void) {
         test();
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, July 26, 2021 | 04:09:55 PM (+06)

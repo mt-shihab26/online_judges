@@ -31,6 +31,6 @@ int main(void)
         cout << ans << endn;
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, August 09, 2021 | 01:15:49 AM (+06)
 // Accepted: 01:36:28 AM (+06)

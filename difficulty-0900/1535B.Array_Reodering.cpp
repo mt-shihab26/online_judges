@@ -47,5 +47,5 @@ int main(void) {
         test_case();
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Thursday, July 22, 2021 | 04:12:36 PM (+06)

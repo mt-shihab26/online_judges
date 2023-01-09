@@ -25,5 +25,5 @@ int main(void) {
         cout << sum - arr[q-1] << endn;
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Friday, September 03, 2021 | 07:53:06 PM (+06)

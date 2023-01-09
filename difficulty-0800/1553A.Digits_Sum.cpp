@@ -29,5 +29,5 @@ int main(void) {
         test();
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Thursday, July 22, 2021 | 08:37:50 PM (+06)

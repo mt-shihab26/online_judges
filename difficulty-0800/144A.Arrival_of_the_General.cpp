@@ -39,5 +39,5 @@ int main(void)
     
     return 0;
 }
-// by: shihab4t
+// by: p-nerd
 // Sunday, June 13, 2021 | 11:12:28 AM (+06)

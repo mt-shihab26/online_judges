@@ -37,5 +37,5 @@ int main(void) {
 
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, July 05, 2021 | 10:37:32 AM (+06)

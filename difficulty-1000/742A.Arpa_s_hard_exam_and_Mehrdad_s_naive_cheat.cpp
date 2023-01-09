@@ -50,5 +50,5 @@ int32_t main()
 
     return 0;
 }
-// github.com/shihab4t (Shihab Mahamud)
+// github.com/p-nerd (Shihab Mahamud)
 // Wednesday, August 10, 2022 | 07:52:31 AM (+06)

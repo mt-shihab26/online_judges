@@ -56,5 +56,5 @@ int main(void)
 
     cout << ans << endn;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Sunday, August 01, 2021 | 07:19:58 PM (+06)

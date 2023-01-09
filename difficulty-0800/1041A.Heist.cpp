@@ -16,5 +16,5 @@ int main(void) {
     }
     cout << (mx - mn + 1) - n << endn;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Wednesday, September 01, 2021 | 04:51:54 AM (+06)

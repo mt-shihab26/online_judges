@@ -101,5 +101,5 @@ int main()
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Monday, January 17, 2022 | 06:34:41 PM (+06)

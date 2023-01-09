@@ -38,5 +38,5 @@ int main(void) {
     
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Thursday, June 24, 2021 | 09:06:10 PM (+06)

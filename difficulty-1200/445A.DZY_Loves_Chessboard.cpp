@@ -44,5 +44,5 @@ int main(void)
         cout << endn;
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Tuesday, July 27, 2021 | 04:31:12 PM (+06)

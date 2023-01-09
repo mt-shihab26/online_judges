@@ -142,6 +142,6 @@ int main()
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Wednesday, February 02, 2022 | 02:06:53 AM (+06)
 // Accepted: 03:07:16 AM (+06)

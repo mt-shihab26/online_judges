@@ -46,5 +46,5 @@ int32_t main()
     cout << (new_pre == now ? "YES" : "NO") << ed;
     return 0;
 }
-// github.com/shihab4t (Shihab Mahamud)
+// github.com/p-nerd (Shihab Mahamud)
 // Saturday, August 20, 2022 | 12:21:39 PM (+06)

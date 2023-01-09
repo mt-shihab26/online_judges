@@ -62,5 +62,5 @@ int main() {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Saturday, January 22, 2022 | 06:52:32 AM (+06)

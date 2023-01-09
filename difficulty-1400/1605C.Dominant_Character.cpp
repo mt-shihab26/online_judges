@@ -104,5 +104,5 @@ int main(void)
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Saturday, December 11, 2021 | 11:36:31 AM (BST)

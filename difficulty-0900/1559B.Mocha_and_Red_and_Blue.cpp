@@ -106,5 +106,5 @@ int main(void) {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Friday, October 15, 2021 | 06:10:21 PM (+06)

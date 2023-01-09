@@ -39,5 +39,5 @@ int main(void)
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Monday, November 15, 2021 | 06:52:21 PM (+06)

@@ -44,5 +44,5 @@ int main(void) {
     
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, June 21, 2021 | 12:43:20 AM (+06)

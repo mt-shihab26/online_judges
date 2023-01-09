@@ -28,5 +28,5 @@ int main(void)
         cout << "YES";
     cout << endn;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, August 02, 2021 |  8:27:51 AM (BST)

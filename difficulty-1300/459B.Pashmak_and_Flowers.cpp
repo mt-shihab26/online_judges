@@ -50,5 +50,5 @@ int main(void) {
 
 
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Wednesday, July 28, 2021 | 02:44:44 PM (+06)

@@ -41,5 +41,5 @@ int main(void) {
     test();
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Sunday, June 20, 2021 | 12:59:41 AM (+06)

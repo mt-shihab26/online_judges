@@ -16,4 +16,4 @@ int main(void) {
     cout << free_rooms << endl;
     return 0;
 }
-/* Author: shihab4t */
+/* Author: p-nerd */

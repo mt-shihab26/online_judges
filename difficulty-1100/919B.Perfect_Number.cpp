@@ -33,5 +33,5 @@ int main()
 
     return 0;
 }
-// shihab4t (Shihab Mahamud)
+// p-nerd (Shihab Mahamud)
 // Saturday, July 02, 2022 | 04:10:11 PM (+06)

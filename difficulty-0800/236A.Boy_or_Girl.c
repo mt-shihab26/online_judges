@@ -21,5 +21,5 @@ int main(void) {
 
     return 0;
 }
-// Author: shihab4t
+// Author: p-nerd
 // Date: Saturday, May 22, 2021 | 10:45:44 PM (+06)

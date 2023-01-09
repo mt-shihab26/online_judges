@@ -49,5 +49,5 @@ int main()
 
     return 0;
 }
-// github.com/shihab4t (Shihab Mahamud)
+// github.com/p-nerd (Shihab Mahamud)
 // Saturday, July 16, 2022 | 03:15:45 PM (+06)

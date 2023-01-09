@@ -64,5 +64,5 @@ int main(void) {
 
     return 0;
 }
-// Solved by: Shihab Mahamud (github.com/shihab4t)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Sunday, January 16, 2022 | 09:15:12 AM (+06)

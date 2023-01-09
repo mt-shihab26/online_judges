@@ -40,5 +40,5 @@ int main(void) {
 
     return 0;
 }
-// Author: shihab4t
+// Author: p-nerd
 // Date: Thursday, May 20, 2021 | 07:55:59 PM (+06)

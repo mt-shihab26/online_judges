@@ -70,5 +70,5 @@ int main(void)
 
     return 0;
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Saturday, June 26, 2021 | 09:03:42 PM (+06)

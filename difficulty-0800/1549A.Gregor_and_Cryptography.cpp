@@ -30,5 +30,5 @@ int main(void) {
         test();
     }
 }
-// Solved By: shihab4t
+// Solved By: p-nerd
 // Monday, August 02, 2021 |  8:59:25 AM (BST)
