@@ -68,6 +68,12 @@ def commit_command() -> None:
         system("git push")
 
 
+def done_command() -> None:
+    filename = argv[2]
+    with open(filename, 'a') as file:
+        file.write("// AC: ")
+    system(f"date '+%A, %B %d, %Y | %r (%Z)' >> {filename}")
+
 def help_command() -> None:
     print("""sp
 
@@ -80,6 +86,7 @@ status  <numeric series> <alphabetical series> ------  Problem submission status
 <file name> <problem numeric series>  <dir name rate} --------  Rename codeforces with specific formatting
 rename <file name> <problem numeric series> <dir name rate}  --------  Rename codeforces with specific formatting
 commit <number of problems> <difficulty> push/""  -----------  Git commit code with  general message
+done <file name>                Add accepted time to end to the file
 help  ---------------------------------------  For help
     """)
 
@@ -96,6 +103,7 @@ if __name__ == "__main__":
         "status": status_command,
         "rename": rename_command,
         "commit": commit_command,
+        "done": done_command,
         "help": help_command
     }
 
