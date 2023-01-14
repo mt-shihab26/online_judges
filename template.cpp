@@ -8,14 +8,11 @@ using namespace std;
 #define str string
 #define all(x) x.begin(), x.end()
 
-const int mod = 1e9 + 7;
-const int inf = 1e9;
+const int
+    mod = 1e9 + 7,
+    inf = 1e9;
 
-int solve()
-{
-
-    return 1;
-}
+int solve();
 
 int32_t main()
 {
@@ -31,5 +28,12 @@ int32_t main()
 
     return 0;
 }
+
+int solve()
+{
+
+    return 1;
+}
+
 // github.com/p-nerd (Shihab Mahamud)
 //
