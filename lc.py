@@ -51,7 +51,21 @@ def append_time_file(file) -> None:
     file1.close()
 
 
+def help_command() -> None:
+    print("""
+leetcode cli
+
+<problem name> <language extension>    create solution file with problem name and
+                                       specific programming language
+                                       like: ./lc.py "204. Count Primes" cpp
+        """)
+
+
 if __name__ == "__main__":
+    argc = len(argv)
+    if (argc <= 1 or argv[1] == "help" or argv[1] == "--help" or argv[1] == '-h'):
+        help_command()
+        exit()
 
     file, ext = add_extension(add_dir(argv[1]))
     file = format_name(file)
