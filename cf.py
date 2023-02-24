@@ -75,9 +75,8 @@ def done_command() -> None:
     system(f"date '+%A, %B %d, %Y | %r (%Z)' >> {filename}")
 
 def help_command() -> None:
-    print("""sp
-
-Automation script for Codeforces users
+    print("""
+codeforce cli
 
 commands:
 -------------
