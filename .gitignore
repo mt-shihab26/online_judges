@@ -1,9 +1,0 @@
-.cph
-a.out
-.vscode
-.idea
-*.class
-output*
-input*
-.fleet
-contest-space
