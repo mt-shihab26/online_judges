@@ -18,6 +18,16 @@ void print(ostream &stream, const vec<T> &v)
 
 void solve()
 {
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a + b == c)
+    {
+        cout << "+" << ed;
+    }
+    else
+    {
+        cout << "-" << ed;
+    }
 }
 
 int32_t main()
@@ -36,4 +46,4 @@ int32_t main()
 }
 
 // github.com/p-nerd (Shihab Mahamud)
-//
+// Thursday, April 20, 2023 | 01:01:50 PM (+06)

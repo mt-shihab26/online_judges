@@ -18,6 +18,32 @@ void print(ostream &stream, const vec<T> &v)
 
 void solve()
 {
+    int n;
+    cin >> n;
+    vec<int> a(n);
+    int x = 0, y = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+
+        if (a[i] % 2 == 0)
+        {
+            x += a[i];
+        }
+        else
+        {
+            y += a[i];
+        }
+    }
+
+    if (x > y)
+    {
+        cout << "YES" << ed;
+    }
+    else
+    {
+        cout << "NO" << ed;
+    }
 }
 
 int32_t main()
@@ -36,4 +62,4 @@ int32_t main()
 }
 
 // github.com/p-nerd (Shihab Mahamud)
-//
+// Thursday, April 20, 2023 | 01:10:17 PM (+06)
