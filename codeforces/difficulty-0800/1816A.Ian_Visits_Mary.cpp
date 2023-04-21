@@ -18,6 +18,12 @@ void print(ostream &stream, const vec<T> &v)
 
 void solve()
 {
+    int x, y;
+    cin >> x >> y;
+
+    cout << 2 << ed;
+    cout << x - 1 << gp << 1 << ed;
+    cout << x << gp << y << ed;
 }
 
 int32_t main()
@@ -36,4 +42,4 @@ int32_t main()
 }
 
 // github.com/p-nerd (Shihab Mahamud)
-// 
+// Friday, April 21, 2023 | 11:43:51 AM (+06)

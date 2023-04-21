@@ -16,8 +16,30 @@ void print(ostream &stream, const vec<T> &v)
     stream << ed;
 }
 
-void solve()
+bool solve()
 {
+    int n;
+    cin >> n;
+    vec<int> c(n);
+    for (int i = 0; i < n; i++)
+        cin >> c[i];
+
+    sort(xbe(c));
+
+    if (c[0] != 1)
+        return false;
+    if (n > 1 && c[1] != 1)
+        return false;
+
+    int pre = 2;
+    for (int i = 2; i < n; i++)
+    {
+        if (pre < c[i])
+            return false;
+        pre += c[i];
+    }
+
+    return true;
 }
 
 int32_t main()
@@ -30,10 +52,10 @@ int32_t main()
     int t;
     cin >> t;
     while (t--)
-        solve();
+        cout << (solve() ? "YES" : "NO") << ed;
 
     return 0;
 }
 
 // github.com/p-nerd (Shihab Mahamud)
-// 
+// Friday, April 21, 2023 | 07:47:15 AM (+06)
