@@ -76,7 +76,7 @@ def done_command() -> None:
 
 def help_command() -> None:
     print("""
-codeforce cli
+cp CLI
 
 commands:
 -------------
