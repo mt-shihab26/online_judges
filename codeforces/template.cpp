@@ -35,5 +35,6 @@ int32_t main()
     return 0;
 }
 
-// github.com/p-nerd (Shihab Mahamud)
+// developershihab.com (Portfolio)
+// github.com/p-nerd (Code)
 // 

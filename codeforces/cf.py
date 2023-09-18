@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import re
 from os import system, rename
 from sys import argv

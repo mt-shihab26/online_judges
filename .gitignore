@@ -2,3 +2,4 @@
 .vscode
 contest-space
 .DS_Store
+*.bin
