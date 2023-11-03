@@ -15,7 +15,15 @@ template <typename T> void print(ostream &stream, const vec<T> &v) {
 }
 
 void solve() {
-    
+    int n;
+    cin >> n;
+    ll x = 1;
+
+    while (n--) {
+        cout << x << " ";
+        x += 2;
+    }
+    cout << ed;
 }
 
 int32_t main() {
@@ -34,4 +42,4 @@ int32_t main() {
 
 // developershihab.com (Portfolio)
 // github.com/p-nerd (Code)
-// 
+// Wednesday, November 01, 2023 | 03:21:44 PM (+06)

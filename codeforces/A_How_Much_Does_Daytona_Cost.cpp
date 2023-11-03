@@ -8,30 +8,25 @@ using namespace std;
 #define str string
 #define xbe(x) x.begin(), x.end()
 
-template <typename T>
-void print(ostream &stream, const vec<T> &v)
-{
+template <typename T> void print(ostream &stream, const vec<T> &v) {
     for (const auto &e : v)
         stream << e << gp;
     stream << ed;
 }
 
-void solve()
-{
+void solve() {
     int n, k, tmp;
     cin >> n >> k;
     bool is_found = false;
 
-    while (n--)
-    {
+    while (n--) {
         cin >> tmp;
         is_found = is_found || tmp == k;
     }
     cout << (is_found ? "YES" : "NO") << "\n";
 }
 
-int32_t main()
-{
+int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cerr << boolalpha;
