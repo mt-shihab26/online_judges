@@ -14,5 +14,5 @@ func twoSum(nums []int, target int) []int {
 	return []int{0, 0}
 }
 
-// github.com/shh26b (Shihab Mahamud)
+// github.com/p-nerd (Shihab Mahamud)
 // Tuesday, December 06, 2022 | 08:22:37 PM (+6)

@@ -45,5 +45,5 @@ public:
 int main()
 {
 }
-// Solved by: Shihab Mahamud (github.com/shh26b)
+// Solved by: Shihab Mahamud (github.com/p-nerd)
 // Wednesday, October 06, 2021 | 04:06:27 PM (+06)

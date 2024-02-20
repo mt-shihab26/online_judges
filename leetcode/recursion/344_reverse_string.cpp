@@ -22,4 +22,4 @@ public:
 int main()
 {
 }
-// Solved by: Shihab Mahamud (github.com/shh26b)
+// Solved by: Shihab Mahamud (github.com/p-nerd)

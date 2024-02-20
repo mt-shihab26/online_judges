@@ -10,5 +10,5 @@ func buildArray(nums []int) []int {
 	return ans
 }
 
-// github.com/shh26b (Shihab Mahamud)
+// github.com/p-nerd (Shihab Mahamud)
 // Tuesday, December 06, 2022 | 08:00:12 PM (+6)

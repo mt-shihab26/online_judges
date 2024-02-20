@@ -35,5 +35,5 @@ public:
 int main()
 {
 }
-// by Shihab Mahamud (github.com/shh26b)
+// by Shihab Mahamud (github.com/p-nerd)
 // Monday, April 11, 2022 | 02:30:21 PM (+06)
