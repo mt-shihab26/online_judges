@@ -1,5 +1,3 @@
-package leetcode
-
-import "C"
+package main
 
 // github.com/p-nerd (Shihab Mahamud)
