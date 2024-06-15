@@ -41,6 +41,7 @@ def get_current_time() -> str:
 
 
 def copy_template_file(dst: str, ext: str) -> None:
+    return;
     template = "./template" + "." + ext
     shutil.copy(template, dst)
 
