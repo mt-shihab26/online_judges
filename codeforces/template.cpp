@@ -8,14 +8,14 @@ using namespace std;
 #define str string
 #define xbe(x) x.begin(), x.end()
 
-template <typename T> void print(ostream &stream, const vec<T> &v) {
+template <typename T>
+void print(ostream &stream, const vec<T> &v) {
     for (const auto &e : v)
         stream << e << gp;
     stream << ed;
 }
 
 void solve() {
-    
 }
 
 int32_t main() {
@@ -34,4 +34,4 @@ int32_t main() {
 
 // developershihab.com (Portfolio)
 // github.com/p-nerd (Code)
-// 
+//
