@@ -3,3 +3,4 @@
 contest-space
 .DS_Store
 *.bin
+.ast
