@@ -4,3 +4,6 @@ contest-space
 .DS_Store
 *.bin
 .ast
+input.txt
+output.txt
+
