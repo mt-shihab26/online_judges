@@ -6,4 +6,5 @@ contest-space
 .ast
 input.txt
 output.txt
+*.out
 
